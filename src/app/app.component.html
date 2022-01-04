@@ -8,7 +8,9 @@
       <input type="text" id="firstname" class="box-align" name="firstname" formControlName="firstname">
     </p>
 
-    <div
+    <div>
+    <!-- {{contactForm.get('firstname')?.value}} a mesma coisa que {{firstname?.value}} -->
+
       *ngIf="!firstname?.valid && (firstname?.dirty ||firstname?.touched)">
       <div [hidden]="!firstname?.errors?.['required']">
         First Name is required
@@ -132,6 +134,8 @@
       <button type="submit" [disabled]="!contactForm.valid">Submit</button>
     </p>
    
+
+
   </form>
    
  

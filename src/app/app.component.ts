@@ -1,8 +1,7 @@
-import { Component, ViewChild, ElementRef } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms'
+import { Component} from '@angular/core';
+import {Validators } from '@angular/forms'
 import { FormBuilder } from '@angular/forms'
-import { groupBy } from 'rxjs/internal/operators/groupBy';
-import { ReactiveFormsModule } from '@angular/forms';
+
 
 @Component({
   selector: 'app-root',
