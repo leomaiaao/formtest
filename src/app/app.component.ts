@@ -20,7 +20,7 @@ export class AppComponent {
     lastname: ['', [Validators.required, Validators.maxLength(15), Validators.pattern("^[a-zA-Z]+$")]],
     email: ['', [Validators.required, Validators.email]],
     gender: ['', [Validators.required]],
-    isMarried: ['', [Validators.required]],
+    isMarried: [''],
     country: ['', [Validators.required]],
     address: this.formBuilder.group({
       city: ['', [Validators.required]],
